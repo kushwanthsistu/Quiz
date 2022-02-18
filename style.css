@@ -1,0 +1,284 @@
+    * {
+    margin : 0px ;
+    padding : 0px ;
+}
+body {
+    background-color : #82c082 ;
+    display : flex ;
+    flex-direction : column ;
+}
+header {
+    display : flex ;
+    height : 65px ;
+    justify-content: space-between ;
+    align-items: center ;
+    border-bottom : solid #008000 3px ;
+}
+header img {
+    background-color : #82c082  ;
+    margin-left : 3px ;
+}
+header h1:last-child {
+    height : 50px ;
+    width : 50px ;
+    border-radius: 50px ;
+    border : solid black 2px ;
+    text-align: center ;
+    align-items: center ;
+    margin-right : 3px ;
+}
+#subjects {
+    display : none ;
+}
+#subjectappear {
+    position : absolute ;
+    top : 0px ;
+    left : 0px ;
+    width : 100% ;
+    height : 100% ;
+    background-color: #82c082  ;
+    display : flex ;
+    justify-content: space-between ;
+}
+#subjectappear img {
+    margin : 10px ;
+    width : 50px ;
+    height : 50px ;
+}
+#subjectappear ul li {
+    font-size : 24px ;
+    font-family : lato , sans-serif ;
+    padding : 5px ;
+    border-bottom : solid #008000 2px ;
+    margin : 2px ;
+    
+    list-style-type: none ;
+}
+#instructions {
+    display : none ;
+}
+#instruction_appear {
+    position : absolute ;
+    top : 0px ;
+    left : 0px ;
+    width : 100% ;
+    height : 100% ;
+    background-color : #82c082  ;
+    font-family : lato , sans-serif ;
+    display : flex ;
+}
+#instruction_appear ul {
+    display : block ;
+    font-size : 20px ;
+    list-style-type: disc ;
+    margin : 15px ;
+}
+#instruction_appear ul li {
+    display : block ;
+    padding : 5px ;
+    border-bottom : solid #008000 3px ;
+}
+#instruction_appear img {
+    width : 50px ;
+    height : 50px ;
+    margin : 15px ;
+}
+.question {
+    background-color : white ;
+    font-family: lato , sans-serif ;
+    width : 80% ;
+    margin : auto ;
+    text-align: center ;
+    border-radius: 10px ;
+    margin-top: 10px ;
+    padding : 5px ;
+}
+.question p {
+    font-size: 18px ;
+    margin : 3px ;
+}
+.question ul {
+    list-style-type: none ;
+}
+.question ul li {
+    padding : 10px ;
+    border : solid #000000 1px ;
+    margin-top : 7px ;
+    border-radius: 8px ;
+    font-size : 14px ;
+}
+.question ul li:last-child {
+    margin-bottom: 5px ;
+}
+#timer  {
+    text-align: center ;
+    padding : 3px ;
+    font-size : 28px ;
+    font-weight: bold ;
+}
+#startorstop  {
+    display : flex ;
+    justify-content: center ;
+}
+#startorstop ul {
+    display : flex ;
+    list-style-type: none ;
+}
+#startorstop ul:hover {
+    cursor : hand ;
+}
+#start {
+    background-color: #008000 ;
+    font-size: 26px ;
+    list-style-type: none ;
+    color : white ;
+    padding : 10px ;
+    margin-top : 10px ;
+    border-radius: 4px ;
+}
+#started {
+    display : none ;
+}
+#toend {
+    display : none ;
+}
+#end {
+    background-color : #ff2400 ;
+    font-size: 26px ;
+    list-style-type: none ;
+    color : white ;
+    padding : 10px ;
+    margin-top : 10px ;
+    border-radius: 4px ;
+}
+#informationrevele {
+    flex : 1 1 auto ;
+    display : flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+    margin-top : 10px ;
+}
+#score {
+    width : 80px ;
+    height : 80px ;
+    border-radius: 80px ;
+    background-color : royalblue ;
+    display : flex ;
+    justify-content: center ;
+    align-items: center ;
+    color : white ;
+    margin-top : 5px ;
+}
+#yourscore {
+    font-size: 10px ;
+}
+#beforeinformation {
+    display : none ;
+}
+#information {
+    display : flex ;
+    flex-direction: column ;
+    align-items: center ;
+}
+#chosensubject {
+    font-size : 24px ;
+    font-weight: bold ;
+    margin-top : 15px ;
+    margin-bottom : 20px ;
+    padding : 10px;
+    border-radius: 5px ;
+    border : solid #008000 3px ;
+}
+#target {
+    background-color : #008000 ;
+    color : white ;
+}
+#goarithmetic {
+    display : none ;
+}
+#gosciences {
+    display : none ;
+}
+#goenglish {
+    display : none ;
+}
+#gogeneralknowledge {
+    display : none ;
+}
+#arithmetic article {
+    display : none ;
+}
+#arithmetic #madevisible {
+    display : block ;
+}
+#sciences article {
+    display : none ;
+}
+#sciences #madevisible {
+    display : block ;
+}
+#english article {
+    display : none ;
+}
+#english #madevisible {
+    display : block ;
+}
+#generalknowledge article {
+    display : none ;
+}
+#generalknowledge #madevisible {
+    display : block ;
+}
+#subjectchosen {
+    display : none ;
+}
+#information {
+    margin-top : 10px ;
+    border-top : solid #008000 3px ;
+}
+#correct {
+    background-color : #008000 ;
+    color : white ;
+}
+#incorrect {
+    background-color : red ;
+    color : white  ;
+}
+#score {
+    font-size : 20px ;
+}
+#ultimatemessage {
+    position : fixed ;
+    top : 0px ;
+    right : 0px ;
+    width : 100% ;
+    height : 100% ;
+    background-color : #82c082  ;
+}
+#ultimatemessageto {
+    display : none ;
+}
+#error {
+    color : red ;
+    font-weight: bold ;
+    text-align: center ;
+    margin-top : 5px ;
+}
+#noerror {
+    display : none ;
+}
+#ultimatemessage #reason {
+    font-size : 24px ;
+    text-align: center ;
+    margin-top : 15px ;
+    margin-bottom : 15px ;
+}
+#ultimatemessage h1 {
+    text-align: center ;
+    margin-bottom : 20px ;
+}
+#ultimatemessage #totalscore {
+    font-size : 36px ;
+    text-align: center ;
+}

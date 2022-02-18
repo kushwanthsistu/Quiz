@@ -4,9 +4,812 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>hello this is quiz</h1>
+            <div id="outercontainer">
+            <div id="ultimatemessageto">
+                <div id="reason"></div>
+                <h1>TOTAL SCORE</h1>
+                <div id="totalscore"></div>
+            </div>
+            <header>
+                <img src="https://drive.google.com/uc?export=view&id=1KlvQSZD9gA-KddDWEpbVvUbsSz_uQq5Z" id="menu">
+                <h1>Quiz</h1>
+                <h1 id="inst">i</h1>
+            </header>
+            <div id="timer">
+               <span id="hours" class="time">00</span> : <span id="minutes" class="time">01</span> : <span id="seconds" class="time">30</span>
+            </div>
+            <div id="subjectchoosing">
+                <article class="question">
+                    <ul id="subjectselect">
+                        <li value="1" id="test_case">Arithmetic</li>
+                        <li value="2">Sciences</li>
+                        <li value="3">English Vocabulary</li>
+                        
+                        <li value="4">General Knowledge</li>
+                    </ul>
+                </article>
+            </div>
+            <div id="goarithmetic">
+                <article class="question">
+                    <p>Which of the following is the famous Ramanujan number?</p>
+                    <ul>
+                        <li value="3">1729</li>
+                        <li value="2">1800</li>
+                        <li value="4">1820</li>
+                        <li value="1">1900</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Solve for x : <br> 2x - 6 = 14</p>
+                    <ul>
+                        <li value="1">8</li>
+                        <li value="2">20</li>
+                        <li value="4">4</li>
+                        <li value="3">10</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>which coordinate changes when we reflect a point about x-axis?</p>
+                    <ul>
+                        <li value="2">x-coordinate</li>
+                        <li value="3">y-coordinate</li>
+                        <li value="4">both</li>
+                        <li value="1">none</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>The starting term of a geometric progression is 1 and the common ratio is 1/2. 
+                        Then what is the sum of the G.P. when taken till infinity : 
+                    </p>
+                    <ul>
+                        <li value="4">3</li>
+                        <li value="2">128</li>
+                        <li value="3">2</li>
+                        <li value="1">1</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>On a bright sunny day, you observe that your shadow is of the same height as you. 
+                        what is the angle of sun over horizon? 
+                    </p>
+                    <ul>
+                        <li value="1">60</li>
+                        <li value="2">15</li>
+                        <li value="4">30</li>
+                        <li value="3">45</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>In which of the following quadrilaterals, the diagonals are perpendicular to each
+                        other.
+                    </p>
+                    <ul>
+                        <li value="2">Rectangle</li>
+                        <li value="3">Rhombus</li>
+                        <li value="4">Parellogram</li>
+                        <li value="1">Trapizium</li>
+                    </ul>
+                </article> 
+                <article class="question">
+                    <p>Mark built a tent in the shape of an equilateral triangle.
+                        The perimeter is 21 meters. Whait is the length of each of the tent's sides?
+                    </p>
+                    <ul>
+                        <li value="3">7</li>
+                        <li value="2">8</li>
+                        <li value="4">10</li>
+                        <li value="1">11</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>A bat and a bal cost one dollar and tent cents in total.
+                        the bat costs a dollar more than the ball. How much the ball cost?
+                    </p>
+                    <ul>
+                        <li value="2">1 dollar</li>
+                        <li value="3">5 cents</li>
+                        <li value="4">10 cents</li>
+                        <li value="1">50 cents</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>What does the expression values : <br>
+                        6 / 2(1+2) 
+                    </p>
+                    <ul>
+                        <li value="4">2</li>
+                        <li value="2">3</li>
+                        <li value="3">9</li>
+                        <li value="1">1</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>In a lake, there is a patch of lily pads. Every day, the patch
+                        doubles in size. if if takes 48 days for the patch to cover the entire 
+                        lake, how long would it take for the patch to cover half the lake?
+                    </p>
+                    <ul>
+                        <li value="1">24 days</li>
+                        <li value="2">30 days</li>
+                        <li value="4">10 days</li>
+                        <li value="3">47 days</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>A container contains a mixture of two liquies A and B in the 
+                        ratio 3:2. When 5 liters of mixture are drawn off and the container is filled
+                        widht B, the ratio of A and B becomes 1:1. How many litres of liquid A 
+                        was contained by the container initially?
+                    </p>
+                    <ul>
+                        <li value="1">21</li>
+                        <li value="2">14</li>
+                        <li value="4">19</li>
+                        <li value="3">18</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>The average of 11 results is 50. If the average of the first
+                        six results is 49 and that of the last six is 52, then
+                        the sixth result is 
+                    </p>
+                    <ul>
+                        <li value="4">48</li>
+                        <li value="2">51</li>
+                        <li value="3">56</li>
+                        <li value="1">49</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>A man bought a watch at 25% discount on the original price. He got
+                        Rs. 40 more that the original price by selling it at 140% of the price at which he bought. 
+                        the price of buying the watch is :
+                    </p>
+                    <ul>
+                        <li value="2">Rs.900</li>
+                        <li value="3">Rs.600</li>
+                        <li value="4">Rs.800</li>
+                        <li value="1">Rs.700</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>The LCM and HCF of 2 numbers are 168 and 6 respectively. 
+                        If one of the numbers is 24, find the other.
+                    </p>
+                    <ul>
+                        <li value="1">36</li>
+                        <li value="2">38</li>
+                        <li value="4">40</li>
+                        <li value="3">42</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>The area of a Rectangle is 42sq.cm and its length is 
+                        7cm. Find its perimeter.
+                    </p>
+                    <ul>
+                        <li value="4">14 cm</li>
+                        <li value="2">21 cm</li>
+                        <li value="3">26 cm</li>
+                        <li value="1">24 cm</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>A triangle has a perimeter of 200. If two of its sides 
+                        are equal and teh third side is 20 more than the equal sides,
+                        what is the length of the third side?
+                    </p>
+                    <ul>
+                        <li value="4">60</li>
+                        <li value="2">50</li>
+                        <li value="43">80</li>
+                        <li value="1">70</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>If each side of a square is increased by 20%. What 
+                        is the increase % in its area?
+                    </p>
+                    <ul>
+                        <li value="4">15%</li>
+                        <li value="2">20%</li>
+                        <li value="3">44%</li>
+                        <li value="1">40%</li>
+                    </ul>
+                </article>
+            </div>
+            <div id="gosciences">
+                <article class="question">
+                    <p>With reference to different layers of the atmoshpere, consider
+                        the follwoing statements:<br>
+                        1. The stratosphere is the lowermost layer of the atmosphere<br>
+                        2. The troposphere is found above the tropopause and it contains the ozone layer<br>
+                        which of the statements given above is/are not correct ?
+                    </p>
+                    <ul>
+                        <li value="4">1 only</li>
+                        <li value="2">2 only</li>
+                        <li value="3">both 1 and 2</li>
+                        <li value="1">neither 1 nor 2</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following are majorly responsible for eutriphication?</p>
+                    <ul>
+                        <li value="3">Phosphate ions</li>
+                        <li value="2">Sulphate ions</li>
+                        <li value="4">Nitrate ions</li>
+                        <li value="1">Chloride ions</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following best defines oxidation of any substance</p>
+                    <ul>
+                        <li value="3">Gain in Oxygen</li>
+                        <li value="2">Loss in Oxygen</li>
+                        <li value="4">Gain in Hydrogen</li>
+                        <li value="1">Loss in Hydrogen</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Respriation is the type of which of the following reactions?</p>
+                    <ul>
+                        <li value="4">Combinations reaction</li>
+                        <li value="2">Decomposition reaction</li>
+                        <li value="3">Exothermic reaction</li>
+                        <li value="1">Endothermic reaction</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>What is the color of the litmus solution when it is neither acidic nor basic?</p>
+                    <ul>
+                        <li value="3">Purple</li>
+                        <li value="2">Yellow</li>
+                        <li value="4">Red</li>
+                        <li value="1">Blue</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following elements is common to all acids?</p>
+                    <ul>
+                        <li value="3">Hydrogen</li>
+                        <li value="2">Chlorine</li>
+                        <li value="4">Sulphur</li>
+                        <li value="1">Sodium</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>A turmeric stain becomes reddish-brown when a soap is 
+                        scrubbed on it. This happens because of which of the following reasons?
+                    </p>
+                    <ul>
+                        <li value="4">The sopa produces acidic effect after combining with turmeric.</li>
+                        <li value="2">The soap declines the acidic nature of the turmeric.</li>
+                        <li value="3">Turmeric is a natural indicator.</li>
+                        <li value="1">Turmeric is basic in nature.</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following ingredients is used to get relief from a bee-string?</p>
+                    <ul>
+                        <li value="1">Formic acid</li>
+                        <li value="2">Sodium Chloride</li>
+                        <li value="4">Vinegar</li>
+                        <li value="3">Baking soda</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following gases, causes the bread or cake to rise making them soft and spongy?</p>
+                    <ul>
+                        <li value="1">Nitrogen</li>
+                        <li value="2">Oxygen</li>
+                        <li value="4">Chlorine</li>
+                        <li value="3">Carbon dioxide</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following is used in soda-acid fire extinguisher?</p>
+                    <ul>
+                        <li value="4">Washing sode</li>
+                        <li value="2">Bleaching powder</li>
+                        <li value="3">Baking sode</li>
+                        <li value="1">Sodium Chloride</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following non-metals is found in the liquid state?</p>
+                    <ul>
+                        <li value="2">Carbon</li>
+                        <li value="3">Bromine</li>
+                        <li value="4">Iodine</li>
+                        <li value="1">Hydrogen</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following is used to coat iron and steel to protect them
+                        from rusting?
+                    </p>
+                    <ul>
+                        <li value="1">Zinc</li>
+                        <li value="2">Lead</li>
+                        <li value="4">Chromium</li>
+                        <li value="3">Copper</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following is the longest part of the alimentary canal?</p>
+                    <ul>
+                        <li value="3">Small intestine</li>
+                        <li value="2">Large intestine</li>
+                        <li value="4">Stomach</li>
+                        <li value="1">Duodenum</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following is used as energy currency to drive the reactions
+                        of endothermic processes?
+                    </p>
+                    <ul>
+                        <li value="3">ATP</li>
+                        <li value="2">Carbon dioxide</li>
+                        <li value="4">Oxygen</li>
+                        <li value="1">Water</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following microorganisms is required to turn milk into curd</p>
+                    <ul>
+                        <li value="3">Bacteria</li>
+                        <li value="2">Fungi</li>
+                        <li value="4">Virus</li>
+                        <li value="1">None of the above</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Uniforms of firemen have a coating to make them flame 
+                        resistant. Which of the following is used to make that coat?
+                    </p>
+                    <ul>
+                        <li value="3">Melamine</li>
+                        <li value="2">Bekalite</li>
+                        <li value="4">Polyester</li>
+                        <li value="1">Teflon</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Where was the first oil well of the world drilled?</p>
+                    <ul>
+                        <li value="3">Pennsylvania</li>
+                        <li value="2">Pittsburgh</li>
+                        <li value="4">Assam</li>
+                        <li value="1">London</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Naphthalene balls, used to combat moths and other pests, is 
+                        obtained from which of the following?
+                    </p>
+                    <ul>
+                        <li value="2">Coke</li>
+                        <li value="3">Coal tar</li>
+                        <li value="4">Coal gas</li>
+                        <li value="1">CNG</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>The earth is divided into many layers. Which of the 
+                        following layers is responsible for termors?
+                    </p>
+                    <ul>
+                        <li value="3">Crust</li>
+                        <li value="2">Mantle</li>
+                        <li value="4">Outer core</li>
+                        <li value="1">Inner core</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following parts of the eye is responsible for 
+                        its charactersistic color?
+                    </p>
+                    <ul>
+                        <li value="1">Lens</li>
+                        <li value="2">Cornea</li>
+                        <li value="4">Retina</li>
+                        <li value="3">Iris</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following is the first artificial satelite to be
+                        launched by India?
+                    </p>
+                    <ul>
+                        <li value="3">Aryabhatta</li>
+                        <li value="2">Kalpana 1</li>
+                        <li value="4">EDUSAT</li>
+                        <li value="1">INSAT</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>The closest star to the earthis sum. After the sun, 
+                        which of the following is the second closest star?
+                    </p>
+                    <ul>
+                        <li value="4">Sirius</li>
+                        <li value="2">Pole star</li>
+                        <li value="3">alpha centauri</li>
+                        <li value="1">None of these</li>
+                    </ul>
+                </article>
+    
+            </div>
+            <div id="goenglish">
+                <article class="question">
+                    <p>choose the option that best expresses the meaning o the idiom<br>
+                    <b>To hit hte nail on the head</b></p>
+                    <ul>
+                        <li value="4">to hit the target</li>
+                        <li value="2">to catch someone napping</li>
+                        <li value="3">to guess right</li>
+                        <li value="1">to settle the old score</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Pick out the anotnym.<br><b>SEQUESTER</b></p>
+                    <ul>
+                        <li value="4">Discover</li>
+                        <li value="2">Correlate</li>
+                        <li value="3">Integrate</li>
+                        <li value="1">Convict of</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>choose the option that best expresses the meaning o the idiom<br>
+                    <b>To put the cart before the horse</b></p>
+                    <ul>
+                        <li value="1">to offer a person what he cannot eat</li>
+                        <li value="2">to force a person to do something</li>
+                        <li value="4">to raise obstacles</li>
+                        <li value="3">to reverse the natural order of things</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Pick out the antonym<br><b>SERRATED</b></p>
+                    <ul>
+                        <li value="2">dull</li>
+                        <li value="3">smooth</li>
+                        <li value="4">random</li>
+                        <li value="1">fragile</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Pick out the synonym<br><b>PANDEMONIUM</b></p>
+                    <ul>
+                        <li value="2">Great joy</li>
+                        <li value="3">Utter confusion</li>
+                        <li value="4">Loud noise</li>
+                        <li value="1">Big crown</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Pick out the synonym <br><b>VICISSITUDE</b></p>
+                    <ul>
+                        <li value="4">sorrows</li>
+                        <li value="2">misfourtunes</li>
+                        <li value="3">changes</li>
+                        <li value="1">surprises</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Fill the blanks with the most appropriate pair of words from the 
+                        given options.<br>
+                        As the airplane_______sideways, the army trunks______over.
+                    </p>
+                    <ul>
+                        <li value="2">skid, skewed</li>
+                        <li value="3">lurched, flipped</li>
+                        <li value="4">planked, spread</li>
+                        <li value="1">tilted, tripped</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>The word closest in meaning to 'artless' is:</p>
+                    <ul>
+                        <li value="4">inexcusable</li>
+                        <li value="2">ugly</li>
+                        <li value="3">penurious</li>
+                        <li value="1">guileless</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Select the option which is grammatically correct.</p>
+                    <ul>
+                        <li value="1">the book that Mark read is on the shelf</li>
+                        <li value="2">since I decided to seek learning support, my essay writing skills are improved.</li>
+                        <li value="4">We suddenly came onto a deer while walking in the woods. </li>
+                        <li value="3">The necessity of introducing divinity into the regular course is being felt.</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Choose the correct match<br>
+                    The car had not been paid______.</p>
+                    <ul>
+                        <li value="3">for</li>
+                        <li value="2">to</li>
+                        <li value="4">at</li>
+                        <li value="1">on</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Choose the correct match<br>
+                    Bears belong___ the family of mammals.</p>
+                    <ul>
+                        <li value="2">at</li>
+                        <li value="3">to</li>
+                        <li value="4">from</li>
+                        <li value="1">in</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>choose the correct meaning<br><b>ENIGMA</b></p>
+                    <ul>
+                        <li value="1">game</li>
+                        <li value="2">disease</li>
+                        <li value="4">machine</li>
+                        <li value="3">mystery</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>The collective term for sheep is </p>
+                    <ul>
+                        <li value="2">a colony</li>
+                        <li value="3">a flock</li>
+                        <li value="4">a pen</li>
+                        <li value="1">a group</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>A fully grown male horse is </p>
+                    <ul>
+                        <li value="4">a colt</li>
+                        <li value="2">a filly</li>
+                        <li value="3">a stallion</li>
+                        <li value="1">an adult</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>the collective term for fish is </p>
+                    <ul>
+                        <li value="4">a swarm</li>
+                        <li value="2">a pod</li>
+                        <li value="3">a school</li>
+                        <li value="1">a pen</li>
+                    </ul>
+                </article>
+    
+    
+            </div>
+            <div id="gogeneralknowledge">
+                <article class="question">
+                    <p>Which is the national bird of Bangladesh?</p>
+                    <ul>
+                        <li value="3">Magpie Robin</li>
+                        <li value="2">Blue-throated barbet</li>
+                        <li value="4">Green-billed malkoha</li>
+                        <li value="1">Baya weaver</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which foreign country is closest to andaman island</p>
+                    <ul>
+                        <li value="2">Sri Lanka</li>
+                        <li value="3">Myanmar</li>
+                        <li value="4">Indonesia</li>
+                        <li value="1">Bangladesh</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Mahatma Gandhi was born in which year?</p>
+                    <ul>
+                        <li value="3">1869</li>
+                        <li value="2">1879</li>
+                        <li value="4">1889</li>
+                        <li value="1">1899</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>When was the Indian Constitution amended for the first time?</p>
+                    <ul>
+                        <li value="2">1949</li>
+                        <li value="3">1951</li>
+                        <li value="4">1952</li>
+                        <li value="1">1953</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Who among the following were official congress megotiators with cripps mission?</p>
+                    <ul>
+                        <li value="4">Mahatma Gandhi and sardar Patel</li>
+                        <li value="2">Acharya J.B.Kripalani and C.Rajagopalachari</li>
+                        <li value="3">Pandit Nehru and Maulana Azad</li>
+                        <li value="1">Dr. Rajendra Prasad and Rafi Ahmed Kidwal</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>which is the highest river dam in India?</p>
+                    <ul>
+                        <li value="1">Hirakud Dam</li>
+                        <li value="2">Bhakra Dam</li>
+                        <li value="4">Sardar Sarovar Dam</li>
+                        <li value="3">Tehri Dam</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Who built Gateway of India?</p>
+                    <ul>
+                        <li value="1">Guru Ramdas</li>
+                        <li value="2">Maharaja Pratap singh</li>
+                        <li value="4">Rabindra Nath Tagore</li>
+                        <li value="3">British Government</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Partions of Bengal was announced in 1905 by_________.</p>
+                    <ul>
+                        <li value="4">Lord Chelmsford</li>
+                        <li value="2">Lord Ripon</li>
+                        <li value="3">Lord Curzon</li>
+                        <li value="1">Lord canning</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following rivers is known as the "Sorrow of Bengal"?</p>
+                    <ul>
+                        <li value="4">Mahanadi</li>
+                        <li value="2">Hooghly</li>
+                        <li value="3">Damodar</li>
+                        <li value="1">Son</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>The judges of the supreme court are appointed by</p>
+                    <ul>
+                        <li value="4">The Prime Minister of India</li>
+                        <li value="2">The Chief Justice of the Supreme court</li>
+                        <li value="3">The President of India</li>
+                        <li value="1">The Indian Parliament</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>The battle of Plassey was fought in_______ </p>
+                    <ul>
+                        <li value="4">1657</li>
+                        <li value="2">1707</li>
+                        <li value="3">1757</li>
+                        <li value="1">1807</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following cities is NOT situated on the banks of any river?</p>
+                    <ul>
+                        <li value="4">surat</li>
+                        <li value="2">Cuttak</li>
+                        <li value="3">Bhopal</li>
+                        <li value="1">Mysore</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Artries carries blood that are filled with</p>
+                    <ul>
+                        <li value="2">Carbon dioxide</li>
+                        <li value="3">Oxygen</li>
+                        <li value="4">Lypids</li>
+                        <li value="1">None</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>'Do or Die' is associated with which of the movements in India's freedom struggle -</p>
+                    <ul>
+                        <li value="1">Dandi March</li>
+                        <li value="2">Non-Cooperative Movement</li>
+                        <li value="4">Khilafat Movement</li>
+                        <li value="3">Quit India Movement</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>The colours of start depend on their?</p>
+                    <ul>
+                        <li value="3">Temperature</li>
+                        <li value="2">Distance</li>
+                        <li value="4">Radius</li>
+                        <li value="1">atmoshperic pressure</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Optical fibre works on the which principle of?</p>
+                    <ul>
+                        <li value="1">Refraction</li>
+                        <li value="2">Scattering</li>
+                        <li value="4">Interference</li>
+                        <li value="3">Total Internal Reflection</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which one of the following is used in a trench to view what happening outside?</p>
+                    <ul>
+                        <li value="4">Spectrometer</li>
+                        <li value="2">clinostat</li>
+                        <li value="3">Simple periscope</li>
+                        <li value="1">Kaleidoscope</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>Which of the following sets of Articles deals with "Emergency Provisions'?</p>
+                    <ul>
+                        <li value="4">Articles 32 and 226</li>
+                        <li value="2">Articles 350 and 351</li>
+                        <li value="3">Articles 352 and 360</li>
+                        <li value="1">Articles 335,336 and 337</li>
+                    </ul>
+                </article>
+                <article class="question">
+                    <p>India's largest Cancer Institute, National Cancer Institute(NCI) has opened in:</p>
+                    <ul>
+                        <li value="3">Jhajjar</li>
+                        <li value="2">Rohtak</li>
+                        <li value="4">sonipat</li>
+                        <li value="1">Hisar</li>
+                    </ul>
+                </article>
+    
+            </div>
+            <div id="startorstop">
+                <ul>
+                <li id="start">START</li>
+                <li id="toend">END</li>
+                </ul>
+            </div>
+            <div id="error">
+    
+            </div>
+            <div id="subjects">
+                <ul>
+                    <li>Arithmetic</li>
+                    <li>Sciences</li>
+                    <li>English Vocabulary</li>
+                    <li>General Knowledge</li>
+                </ul>
+                <img src="https://drive.google.com/uc?export=view&id=11GlKwk3_zuaMKZCc35RSJ6Nr4cPPEOKY" id="cancel">
+            </div>
+            <div id="instructions">
+                <img src="https://drive.google.com/uc?export=view&id=11GlKwk3_zuaMKZCc35RSJ6Nr4cPPEOKY" id="cancel_inst">
+                <ul>
+                    <li>This is an endless stream of questions and all you got is 
+                        2 minutes.
+                    </li>
+                    <li>You can go on answering till you get out of time</li>
+                    <li>The option will turn green if you are correct</li>
+                    <li>Red for the wrong answer</li>
+                    <li>We will provide points to estimate your answering</li>
+                    <li>+100 points for every correct answer</li>
+                    <li>-50 points for evey wrong answer</li>
+                    <li>Don't stop learning</li>
+                </ul>
+            </div>
+            <div id="beforeinformation">
+               <div id="chosensubject"><h1></h1></div>
+               <div id="yourscore">
+                   <h1>YOUR SCORE</h1>
+               </div>
+               <div id="score">
+                   <h1></h1>
+               </div>
+            </div>
+            </div>
+        <script src = "index.js">
+        </script>
 </body>
 </html>
